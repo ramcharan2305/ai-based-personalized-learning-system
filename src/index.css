@@ -287,13 +287,59 @@ a {
   background: rgba(56, 189, 248, 0.08);
 }
 
-.footer {
-  text-align: center;
-  padding: 1.5rem 2rem;
-  color: var(--muted);
-  font-size: 0.95rem;
-  border-top: 1px solid var(--border);
-}
+  .roadmap-demo-card {
+    margin-top: 1.5rem;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .roadmap-form {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .roadmap-form label {
+    display: grid;
+    gap: 0.5rem;
+    color: var(--muted);
+  }
+
+  .roadmap-form input,
+  .roadmap-form select {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border-radius: 0.95rem;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    background: #111827;
+    color: var(--text);
+  }
+
+  .roadmap-result {
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    background: rgba(148, 163, 184, 0.06);
+    border-radius: 1rem;
+  }
+
+  .roadmap-result p,
+  .roadmap-result li {
+    color: var(--text);
+  }
+
+  .roadmap-result ol {
+    margin: 1rem 0 0;
+    padding-left: 1.3rem;
+  }
+
+  .roadmap-result .note {
+    margin-top: 1rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
 
 @media (max-width: 900px) {
   .info-grid,

@@ -6,11 +6,11 @@ export default function Home() {
       <div className="hero-panel">
         <h2>Smart learning system that adapts to you.</h2>
         <p>
-          Discover courses and recommendations tailored to your skill level, goals, and study habits.
+          Discover courses and recommended learning paths tailored to your skill level, goals, and study habits.
         </p>
         <div className="hero-actions">
           <a className="button primary" href="/login">Get Started</a>
-          <a className="button secondary" href="/dashboard">View Demo</a>
+          <a className="button secondary" href="/demo">View Demo</a>
         </div>
       </div>
 
@@ -27,20 +27,12 @@ export default function Home() {
           <h3>Responsive experience</h3>
           <p>Designed to work on desktop and mobile screens alike.</p>
         </article>
+        <article>
+          <h3>Quizzes for evaluation</h3>
+          <p>Evaluates the user's performance through quiz and the system adapts to the user learning speed</p>
+        </article>
       </div>
 
-      <div className="recommendations-card">
-        <h3>Recommended for you</h3>
-        <div className="recommendation-list">
-          {recommendations.map((item) => (
-            <div key={item.id} className="recommendation-item">
-              <h4>{item.title}</h4>
-              <p>{item.summary}</p>
-              <span>{item.level}</span>
-            </div>
-          ))}
-        </div>
-      </div>
     </section>
   );
 }
